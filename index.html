@@ -1,4 +1,5 @@
-  <!DOCTYPE html>
+ 
+<!DOCTYPE html>
 <html lang="en-US">
 <body>
 
@@ -23,3 +24,21 @@ function drawChart() {
   ['04', 2706, 107, 276],
   ['05', 3296, 148, 414]
 ]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {
+        'title':'Italia: marzo',
+         curveType: 'function',
+         legend: { position: 'bottom' },
+         'width':600, 'height':400
+  };
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.LineChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
+
