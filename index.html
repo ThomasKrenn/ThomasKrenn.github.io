@@ -1,0 +1,25 @@
+  <!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h1>Coronavirus</h1>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Date', 'POSITIVI','DECEDUTI','GUARITI'],
+  ['01', 1577,  34,  83],
+  ['02', 1835,  52, 149], 
+  ['03', 2263,  79, 160],
+  ['04', 2706, 107, 276],
+  ['05', 3296, 148, 414]
+]);
