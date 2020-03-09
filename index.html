@@ -44,6 +44,7 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
   ['Date', 'POSITIVI','DECEDUTI','GUARITI'],
+  ['28', 1053,  29,  46],   
   ['01', 1577,  34,  83],
   ['02', 1835,  52, 149], 
   ['03', 2263,  79, 160],
@@ -58,7 +59,7 @@ function drawChart() {
 
   // Optional; add a title and set the width and height of the chart
   var options = {
-        'title':'Italia: marzo',
+        'title':'Italia:  febbraio / marzo',
          curveType: 'function',
          legend: { position: 'bottom' },
          'width':600, 'height':400
